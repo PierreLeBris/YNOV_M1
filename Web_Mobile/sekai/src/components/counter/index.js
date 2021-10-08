@@ -5,7 +5,8 @@ const Counter = () => {
 
     useEffect(() => {
         console.log('JE VIS')
-    })
+        document.title = counterValue
+    }, [counterValue])
 
     return (
         <div>
