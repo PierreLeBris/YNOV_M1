@@ -1,31 +1,46 @@
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
+import { uuid } from 'uuidv4';
 
 
 const Todos = () => {
-    const[todoList, setTodoList] = useState(['todo 1', 'todo 2'])
-    const[inputValue, setInputValue] = useState('')
+    const [todoList, setTodoList] = useState([{id: 1, label: 'coco'}, {id: 2, label: 'cuicui'}])
+    const [inputValue, setInputValue] = useState('')
+
 
     const addTodoList = () => {
-        setTodoList([...todoList, inputValue])
+        setTodoList([...todoList, { label:inputValue, id: uuid()}])
+        setInputValue('')
     }
 
-    useEffect (() => {
+    const removeFromList = (id) => {
+        const newTodoList = todoList.filter(item => item.id !== id)
+        setTodoList(newTodoList)
+    }
+
+    useEffect(() => {
         console.log('inputValue', inputValue)
     })
-    return (
+        return (
         <div>
-            <input 
+            <input></input>
+            <input
                 value={inputValue}
                 onChange={event => {
-                setInputValue(event.target.input)
-            }}></input>
+                setInputValue(event.target.value)
+            }} ></input>
+            <button onClick={addTodoList}>Add</button>
+
             {todoList.map(todo => {
                 return(
-                    <p>{todo}</p>
+                    <div>
+                    <p>{todo.label}</p>
+                    <button onClick={() => removeFromList(todo.id)}> supprimer</button>
+                    </div>
                 )
             })}
 
-            <button onClick={addTodoList}>ADD</button>
+            {/* {todoList.map(todo => <p>{todo}</p>
+            )} */}
         </div>
     )
 }
