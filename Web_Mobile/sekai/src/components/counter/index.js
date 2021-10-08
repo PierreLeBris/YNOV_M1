@@ -1,7 +1,11 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Counter = () => {
     const [counterValue, setCounterValue] = useState(0)
+
+    useEffect(() => {
+        console.log('JE VIS')
+    })
 
     return (
         <div>
