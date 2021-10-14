@@ -1,17 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Login = props => {
-console.log("🚀 ~ file: login.js ~ line 5 ~ props", props)
-    return (
+export default function Login() {
+    return(
+      <form>
+        <label>
+          <p>Username</p>
+          <input type="text" />
+        </label>
+        <label>
+          <p>Password</p>
+          <input type="password" />
+        </label>
         <div>
-            <p>Login</p>
+          <button type="submit">Submit</button>
         </div>
-    );
-};
+      </form>
+    )
+  }
 
 Login.propTypes = {
     
 };
 
-export default Login;
+//export default Login;

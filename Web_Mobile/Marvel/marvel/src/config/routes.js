@@ -13,12 +13,14 @@ import Login from '../screens/login'
 import Characters from '../screens/characters'
 import Navigation from "../components/navigation";
 
+<img src="../images/imgmarvel.jpeg" alt=""></img>
+
 const Routes = () => {
     return(
         <Router>
             <Navigation/>
             <Switch>
-                <Route exact path="/">
+                <Route path="/login">
                     <Login></Login>
                 </Route>
                 <Route path="/characters">
