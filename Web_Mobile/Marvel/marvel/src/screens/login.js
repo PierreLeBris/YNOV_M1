@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import LoginForm from '../components/loginForm';
-import StyledCounter from '../components/styledCounter';
+import logo from '../imgmarvel.jpeg'
 
 const Login = props => {
 console.log("🚀 ~ file: login.js ~ line 5 ~ props", props)
     return (
         <div>
+            <img src={logo}/>
             <p>Login</p>
-            {/* <LoginForm></LoginForm> */}
-            <StyledCounter></StyledCounter >
+            <LoginForm></LoginForm>
         </div>
     );
 };

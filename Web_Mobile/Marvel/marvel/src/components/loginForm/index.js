@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components'
 import axios from 'axios';
 import {useHistory} from 'react-router-dom';
+import InfiniteScroll from 'infinite-scroll'
 const LoginForm = props => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -26,7 +27,7 @@ const LoginForm = props => {
         }).then((response) => {
             console.log(response.headers['x-access-token']);
             localStorage.setItem('token',response.headers['x-access-token'])
-            history.push('/characters')
+            history.push('/home')
         })
      
     }
