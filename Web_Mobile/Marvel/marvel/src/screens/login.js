@@ -1,50 +1,21 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import React, { useState } from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import "../login.css";
+import LoginForm from '../components/loginForm';
+import StyledCounter from '../components/styledCounter';
 
-export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+const Login = props => {
+console.log("🚀 ~ file: login.js ~ line 5 ~ props", props)
+    return (
+        <div>
+            <p>Login</p>
+            {/* <LoginForm></LoginForm> */}
+            <StyledCounter></StyledCounter >
+        </div>
+    );
+};
 
-  function validateForm() {
-    return email.length > 0 && password.length > 0;
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-  }
-
-  return (
-    <div className="Login">
-      <Form onSubmit={handleSubmit}>
-        <Form.Group size="lg" controlId="email">
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            autoFocus
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </Form.Group>
-        <Form.Group size="lg" controlId="password">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-        </Form.Group>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
-          Login
-        </Button>
-      </Form>
-    </div>
-  );
-}
 Login.propTypes = {
     
 };
 
-//export default Login;
+export default Login;
