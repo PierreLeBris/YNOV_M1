@@ -16,6 +16,6 @@ console.log("🚀 ~ file: login.js ~ line 5 ~ props", props)
 
 Login.propTypes = {
     
-};
+}
 
-export default Login;
+export default Login

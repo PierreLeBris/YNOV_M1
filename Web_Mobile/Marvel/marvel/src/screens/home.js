@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import styled from 'styled-components';
 import md5 from 'md5';
-import Pagination from '../Pagination';
+import Pagination from '../components/pagination';
 import privateKey from '../secret'
 
 const Home = props => { 
@@ -36,11 +36,11 @@ const Home = props => {
     return <div>
         {charactersList.map(character => <p>{character?.name}</p>)}
         <Pagination
-        total={total}
-        setCurrentPage={setCurrentPage}
-        valueOffset={valueOffset}
+            total={total}
+            setCurrentPage={setCurrentPage}
+            valueOffset={valueOffset}
         ></Pagination>
     </div>
-};
+}
 
-export default Home;
+export default Home

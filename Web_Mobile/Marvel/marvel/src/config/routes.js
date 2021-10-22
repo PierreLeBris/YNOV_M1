@@ -29,4 +29,4 @@ import { useState } from "react";
       )
   }
 
-  export default Routes;
+  export default Routes
