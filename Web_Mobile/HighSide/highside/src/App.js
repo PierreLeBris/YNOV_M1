@@ -13,9 +13,6 @@ function App() {
       <header className="App-header">
       <SearchBar></SearchBar>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -24,10 +21,15 @@ function App() {
         >
           Learn React
         </a>
+        <p/>
         <Slide></Slide>
       </header>
+      <img src={logo2}/>
     </div>
   );
 }
 
 export default App;
+
+
+//Site d'actualité + diaporama + lecture article + like un article (optionnel)

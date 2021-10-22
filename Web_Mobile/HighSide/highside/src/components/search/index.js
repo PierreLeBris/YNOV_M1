@@ -1,9 +1,11 @@
 import React from 'react';
+import '../../App.css'
+
 
 const SearchBar = () => (
     <form action="/" method="get">
         <label htmlFor="header-search">
-            <span className="visually-hidden">Search blog posts </span>
+            <span className="visually-hidden">Ouais C Bo </span>
         </label>
         <input
             type="text"
