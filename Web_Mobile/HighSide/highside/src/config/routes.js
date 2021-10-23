@@ -6,20 +6,21 @@ import {
     Link
 } from "react-router-dom";
 
+import Navigation from "../components/navigation";
 import Home from '../screens/home'
-import Moto1 from "../screens/moto1";
+import Moto1 from '../screens/moto1'
 
 const Routes = () => {
     return(
         <Router>
-            {/* <Navigation/> */}
+            <Navigation/>
             <Switch>
                 <Route exact path="/">
                     <Home></Home>
                 </Route>
-                <Routes path="/moto1">
+                <Route path="/moto1">
                     <Moto1></Moto1>
-                </Routes>
+                </Route>
                 <Redirect  to="/"></Redirect>
             </Switch>
         </Router>
