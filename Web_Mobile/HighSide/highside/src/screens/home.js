@@ -6,6 +6,7 @@ import SearchBar from '../components/search';
 import Slide from '../components/slide';
 import Article from '../components/article';
 
+
 const Home = props => {
   return (
     <div className="App">
