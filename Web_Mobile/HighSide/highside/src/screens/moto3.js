@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../HighSide-anim-logo_@2x.gif'
 import image from '../streetfighter.jpg'
+import { Provider, UpdownButton } from "@lyket/react";
+
 import '../App.css';
 
 import { LoremIpsum } from 'react-lorem-ipsum';
@@ -17,7 +19,14 @@ const Moto3 = props => {
         <LoremIpsum p={1} />
         <img className="imgmoto" src={image}/>
         <LoremIpsum p={1} />
+        <Provider apiKey="acc0dbccce8e557db5ebbe6d605aaa">
+          <UpdownButton
+          namespace="my-documentation"
+          id="like-dislike-buttons-api"
+          />
+        </Provider>
       </div>
+      <p></p>
     <img src={logo}/>
     </div>
   );
