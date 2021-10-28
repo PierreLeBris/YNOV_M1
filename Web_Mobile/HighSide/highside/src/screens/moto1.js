@@ -1,5 +1,5 @@
 import React from 'react';
-import logo2 from '../HighSide-anim-logo_@2x.gif'
+import logo from '../HighSide-anim-logo_@2x.gif'
 import image1 from '../daytona.jpg'
 import Like from '../components/like';
 
@@ -10,7 +10,7 @@ import { LoremIpsum } from 'react-lorem-ipsum';
 const Moto1 = props => {
   return (
     <div className="App-moto1">
-    <img src={logo2}/>
+    <img src={logo}/>
       <header className="App-header-moto1">
         <p/>
       </header>
@@ -22,7 +22,7 @@ const Moto1 = props => {
         <Like></Like>
       </div>
       <p></p>
-    <img src={logo2}/>
+    <img src={logo}/>
     </div>
   );
 }

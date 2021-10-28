@@ -1,8 +1,6 @@
 import React from 'react';
 import logo from '../HighSide-anim-logo_@2x.gif'
 import image from '../mt07.jpg'
-import Like from '../components/like';
-
 import '../App.css';
 
 import { LoremIpsum } from 'react-lorem-ipsum';
@@ -19,9 +17,7 @@ const Moto2 = props => {
         <LoremIpsum p={1} />
         <img className="imgmoto" src={image}/>
         <LoremIpsum p={1} />
-        <Like></Like>
       </div>
-      <p></p>
     <img src={logo}/>
     </div>
   );

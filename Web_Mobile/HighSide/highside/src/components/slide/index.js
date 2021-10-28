@@ -11,7 +11,8 @@ const Slide = () => {
   return (
     <div className="Slide">
     <AliceCarousel 
-        autoPlay autoPlayInterval="4000"
+        autoPlay autoPlayInterval="3000"
+        disableButtonsControls="true"
         mouseTrackingEnabled={true}
         infinite ={true}>
 
