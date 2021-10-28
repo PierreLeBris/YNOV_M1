@@ -1,18 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import '../../App.css'
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import image1 from '../../daytona.jpg'
 import image2 from '../../streetfighter.jpg'
 import image3 from '../../mt07.jpg'
-import Article from '../article';
 
 
 const Slide = () => {
   return (
     <div className="Slide">
     <AliceCarousel 
-        autoPlay autoPlayInterval="10000"
+        autoPlay autoPlayInterval="4000"
         mouseTrackingEnabled={true}
         infinite ={true}>
 

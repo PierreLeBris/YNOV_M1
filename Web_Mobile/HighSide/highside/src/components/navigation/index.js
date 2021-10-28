@@ -1,18 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link,useHistory } from 'react-router-dom';
-import Article from '../article';
+import { Link } from 'react-router-dom';
 
 const Navigation = props => {
-    const history = useHistory()
     return (
         <nav>
               <Link to="/"> -Home- </Link>
               <Link to="/moto1"> -Daytona- </Link>
+              <Link to="/moto2"> -MT 07- </Link>
+              <Link to="/moto3"> -Streetfighter- </Link>
+
               <p>
               </p>
-              {/* <p onClick={() => history.push('/')}> HOME </p> */}
-              {/* <p onClick={() => history.push('/moto1')}> Daytona </p> */}
         </nav>
     );
 };

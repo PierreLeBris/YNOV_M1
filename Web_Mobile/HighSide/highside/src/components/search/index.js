@@ -10,7 +10,7 @@ const SearchBar = () => (
         <input
             type="text"
             id="header-search"
-            placeholder="OuaisCBoMaisçafonctionnepas"
+            placeholder="CBoMaisçafonctionnepas"
             name="s" 
         />
         <button type="submit">Search</button>

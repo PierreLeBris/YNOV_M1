@@ -72,9 +72,25 @@
  position: absolute;
  right: 50%;
  left: 10%;
- bottom: 5%;
+ bottom: 10%;
  color: white;
 }
+
+.text-on-image-mt {
+  position: absolute;
+  right: 10%;
+  left: 30%;
+  bottom: 30%;
+  color: white;
+ }
+
+.text-on-image-ducat {
+  position: absolute;
+  right: 10%;
+  left: 65%;
+  bottom: 50%;
+  color: white;
+ }
 
 .highside {
   height: 200px;
@@ -82,9 +98,8 @@
   object-fit: cover;
 }
 
-
-/*.airkit_slider .slider-item .slide-title {
-	text-overflow: ellipsis;
-	overflow: hidden;
-	max-height:4em;
-}*/
+.imgmoto {
+  height: 90%;
+  width: 90%;
+  object-fit: cover;
+}
