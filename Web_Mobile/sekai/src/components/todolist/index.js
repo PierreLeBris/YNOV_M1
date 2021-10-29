@@ -39,8 +39,8 @@ const Todos = () => {
                 )
             })}
 
-            {/* {todoList.map(todo => <p>{todo}</p>
-            )} */}
+            {todoList.map(todo => <p>{todo}</p>
+            )}
         </div>
     )
 }

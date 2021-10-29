@@ -1,5 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { INCREMENT_COUNTER, DECREMENT_COUNTER } from "../actions/counter";
+import { ADD_TODO, REMOVE_TODO } from "../actions/todo";
+import { useEffect, useState } from "react";
+import { uuid } from 'uuidv4';
 
 const initialState = {
     value: 0
@@ -7,17 +9,16 @@ const initialState = {
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case INCREMENT_COUNTER:
+        case ADD_TODO:
             return {
                 ...state,
                 value: state.value + action.value 
             }
        
    
-        case DECREMENT_COUNTER:
+        case REMOVE_TODO:
             return {
                 ...state, 
-                value: state.value - 1
             }
             default:
                 return state

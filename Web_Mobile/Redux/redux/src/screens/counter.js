@@ -12,8 +12,8 @@ const Counter = props => {
     return (
         <div>
             <p>{counter.value}</p>
-            <button onClick={() => dispatch(allTheActions.counter.decrementCounter())}>-</button>
-            <button onClick={() => dispatch(allTheActions.counter.incrementCounter())}>+</button>
+            <button onClick={() => dispatch(allTheActions.counter.incrementCounter(2))}>+</button>
+            <button onClick={() => dispatch(allTheActions.counter.decrementCounter(1))}>-</button>
         </div>
     );
 };

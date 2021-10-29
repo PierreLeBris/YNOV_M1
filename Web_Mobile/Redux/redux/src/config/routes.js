@@ -6,6 +6,7 @@ import {
     Redirect,
     Link
 } from "react-router-dom";
+import Todo from '../reducers/todo';
 import Counter from '../screens/counter';
 
 const Routes = props => {
@@ -14,6 +15,7 @@ const Routes = props => {
             <Switch>
                 <Route exact path="/">
                     <Counter></Counter>
+                    <Todo></Todo>
                 </Route>
             </Switch>
         </Router>
