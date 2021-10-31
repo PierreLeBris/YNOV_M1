@@ -1,11 +1,18 @@
 export const ADD_TODO = 'ADD_TODO'
 export const REMOVE_TODO = 'REMOVE_TODO'
+export const UPDATE_TODO = 'UPDATE_TODO'
 
-export const incrementCounter = payload => ({
+export const incrementTODO = payload => ({
     type: ADD_TODO,
     value: payload
 })
 
-export const decrementCounter = () => ({
-    type: REMOVE_TODO
+export const decrementTODO = payload => ({
+    type: REMOVE_TODO,
+    value: payload
+})
+
+export const updateToDoList = payload => ({
+    type: UPDATE_TODO,
+    value: payload
 })

@@ -9,48 +9,40 @@ import allTheActions from '../actions'
 
 const Todo = props => {
     const dispatch = useDispatch()
-    const todo = useSelector(state => state.todo)
-    const [todoList, setTodoList] = useState([{id: 1, label: 'coco'}, {id: 2, label: 'cuicui'}])
+    const todo = useSelector(state => state.todo.value)
     const [inputValue, setInputValue] = useState('')
-    const addTodoList = () => {
-        setTodoList([...todoList, { label:inputValue, id: uuid()}])
-        setInputValue('')
-    }
+    const [toDo, setToDo] = useState('')
+    const [valueChange, setValueChange] = useState('')
+    const [modeEdit, setModeEdit] = useState(false)
 
-    const removeFromList = (id) => {
-        const newTodoList = todoList.filter(item => item.id !== id)
-        setTodoList(newTodoList)
-    }
 
     useEffect(() => {
         console.log('inputValue', inputValue)
     })
 
         
+    useEffect(() => {
+        console.log(todo)
+    }, [])
     return (
         <div>
-            <input></input>
-            <input
-                value={inputValue}
-                onChange={event => {
-                setInputValue(event.target.value)
-            }} ></input>
-                        <button onClick={addTodoList}>Add</button>
-
-    {todoList.map(todo => {
-        return(
-            <div>
-            <p>{todo.label}</p>
-            <button onClick={() => removeFromList(todo.id)}> supprimer</button>
-            </div>
-        )
-    })}
-
-    {todoList.map(todo => <p>{todo}</p>
-    )}
-            <p>{todo.value}</p>
-            <button onClick={() => dispatch(allTheActions.todo.incrementCounter(2))}>+</button>
-            <button onClick={() => dispatch(allTheActions.todo.decrementCounter(1))}>-</button>
+            <input value={toDo} onChange={event => setToDo(event.target.value)}/>
+            <button onClick={() => dispatch(allTheActions.todo.incrementTODO({id: uuid(), value: toDo}))}>Ajout</button>
+            { todo.map(x => {
+                return(
+                    <div>
+                        <h1 key={x.id}>{x.value}</h1>
+                        <button onClick={() => dispatch(allTheActions.todo.decrementTODO(x.id))}>Supprimer</button>
+                        <button onClick={() => setModeEdit(!modeEdit)}>Edit</button>
+                        { modeEdit === true ?
+                        <div> 
+                            <input value={valueChange} onChange={event => setValueChange(event.target.value)}/>
+                            <button onClick={() => dispatch(allTheActions.todo.updateToDoList({id: x.id, value: valueChange}))}>Modifier</button>
+                        </div> :
+                        null}
+                    </div>
+                )
+            })}
         </div>
     );
 };

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { uuid } from 'uuidv4';
 
 const initialState = {
-    value: 0
+    value: [{}]
 }
 
 export default (state = initialState, action) => {
@@ -12,13 +12,14 @@ export default (state = initialState, action) => {
         case ADD_TODO:
             return {
                 ...state,
-                value: state.value + action.value 
+                value: [...state.value,{id: uuid(), label: action.value} ]
             }
        
    
         case REMOVE_TODO:
             return {
                 ...state, 
+                value: state.value.filter(x => x.id !== action.value)
             }
             default:
                 return state
