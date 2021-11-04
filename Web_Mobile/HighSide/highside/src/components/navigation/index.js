@@ -21,10 +21,3 @@ Navigation.propTypes = {
 };
 
 export default Navigation;
-
-/*
-              <Link to="/"> -Home- </Link>
-              <Link to="/moto1"> -Daytona- </Link>
-              <Link to="/moto2"> -MT 07- </Link>
-              <Link to="/moto3"> -Streetfighter- </Link>
-*/
