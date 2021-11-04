@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Todo from '../screens/todo';
 import Counter from '../screens/counter';
+import Harry from '../screens/harry';
 
 const Routes = props => {
     return (
@@ -17,8 +18,11 @@ const Routes = props => {
                     <Counter></Counter>
                 </Route>
                 <Route path="/todo">
-                <Todo></Todo>
-                    </Route>
+                    <Todo></Todo>
+                </Route>
+                <Route path="/harry">
+                    <Harry></Harry>
+                </Route>
             </Switch>
         </Router>
     );

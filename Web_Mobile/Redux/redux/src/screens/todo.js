@@ -29,7 +29,7 @@ const Todo = props => {
             { todo.map(x => {
                 return(
                     <div>
-                        <h2 key={x.id}>{x.value}</h2>
+                        <h2 key={x.id}>{x.label?.value}</h2>
                         <button onClick={() => dispatch(allTheActions.todo.decrementTODO(x.id))}>Supprimer</button>
                         <button onClick={() => setModeEdit(!modeEdit)}>Edit</button>
                         { modeEdit === true ?
