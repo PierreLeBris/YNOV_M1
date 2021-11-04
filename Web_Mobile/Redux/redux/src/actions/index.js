@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import * as counter from './counter'
 import * as todo from './todo'
 

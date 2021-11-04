@@ -15,15 +15,13 @@ const Todo = props => {
     const [valueChange, setValueChange] = useState('')
     const [modeEdit, setModeEdit] = useState(false)
 
-
     useEffect(() => {
         console.log('inputValue', inputValue)
     })
 
-        
     useEffect(() => {
         console.log(todo)
-    }, [])
+    }, [todo])
     return (
         <div>
             <input value={toDo} onChange={event => setToDo(event.target.value)}/>
@@ -31,7 +29,7 @@ const Todo = props => {
             { todo.map(x => {
                 return(
                     <div>
-                        <h1 key={x.id}>{x.value}</h1>
+                        <h2 key={x.id}>{x.value}</h2>
                         <button onClick={() => dispatch(allTheActions.todo.decrementTODO(x.id))}>Supprimer</button>
                         <button onClick={() => setModeEdit(!modeEdit)}>Edit</button>
                         { modeEdit === true ?
