@@ -1,0 +1,10 @@
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\bin\Debug\netcoreapp3.1\Archi.Library.deps.json
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\bin\Debug\netcoreapp3.1\Archi.Library.dll
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\bin\Debug\netcoreapp3.1\Archi.Library.pdb
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\obj\Debug\netcoreapp3.1\Archi.Library.csproj.AssemblyReference.cache
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\obj\Debug\netcoreapp3.1\Archi.Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\obj\Debug\netcoreapp3.1\Archi.Library.AssemblyInfoInputs.cache
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\obj\Debug\netcoreapp3.1\Archi.Library.AssemblyInfo.cs
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\obj\Debug\netcoreapp3.1\Archi.Library.csproj.CoreCompileInputs.cache
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\obj\Debug\netcoreapp3.1\Archi.Library.dll
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ClassLibrary1\obj\Debug\netcoreapp3.1\Archi.Library.pdb
