@@ -132,3 +132,5 @@ D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\ru\M
 D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\Archi.Library.dll
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\Archi.Library.pdb

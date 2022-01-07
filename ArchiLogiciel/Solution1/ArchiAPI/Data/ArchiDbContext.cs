@@ -1,4 +1,5 @@
 ﻿using Archi.Api.Models;
+using Archi.Library.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Archi.Api.Data
 {
-    public class ArchiDbContext: DbContext
+    public class ArchiDbContext: BaseDbContext
     {
         public ArchiDbContext(DbContextOptions options):base(options)
         {
