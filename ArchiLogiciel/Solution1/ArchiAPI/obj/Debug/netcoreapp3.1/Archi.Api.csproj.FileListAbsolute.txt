@@ -134,3 +134,9 @@ D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\zh-H
 D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\Archi.Library.dll
 D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\Archi.Library.pdb
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\YNOV_M1\YNOV_M1\ArchiLogiciel\Solution1\ArchiAPI\obj\Debug\netcoreapp3.1\Archi.Api.MvcApplicationPartsAssemblyInfo.cs

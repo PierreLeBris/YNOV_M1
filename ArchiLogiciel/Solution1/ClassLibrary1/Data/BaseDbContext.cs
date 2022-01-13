@@ -39,5 +39,16 @@ namespace Archi.Library.Data
                 }
             }
         }
+        private void ChangeCreatedState()
+        {
+            var delEntities = ChangeTracker.Entries().Where(x => x.State == EntityState.Added);
+            foreach (var item in delEntities)
+            {
+                if (item.Entity is BaseModel model)
+                {
+                    model.Active = true;
+                }
+            }
+        }
     }
 }

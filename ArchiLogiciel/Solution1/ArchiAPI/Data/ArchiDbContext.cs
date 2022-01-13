@@ -15,6 +15,6 @@ namespace Archi.Api.Data
 
         }
         public DbSet<Customer> Customers { get; set; }
-        public DbSet<Archi.Api.Models.Pizza> Pizza { get; set; }
+        public DbSet<Pizza> Pizza { get; set; }
     }
 }
