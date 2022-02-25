@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5e10b23-bcff-4f6f-9098-df3c42009d69" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utilitaires/Utilitaires.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M1Zelda/main/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M1Zelda/main/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M1Zelda/model/Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M1Zelda/model/Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M1Zelda/utilitaires/Utilitaires.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M1Zelda/utilitaires/Utilitaires.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utilitaires/Utilitaires.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utilitaires/Utilitaires.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1645779305931</updated>
-      <workItem from="1645779315205" duration="2359000" />
+      <workItem from="1645779315205" duration="4444000" />
     </task>
     <servers />
   </component>
