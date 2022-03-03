@@ -41,10 +41,16 @@ public class Game {
 
     private void handleEnemyMouvement(Data data) {
         for (Element enemy : data.getEnemies()) {
+
             int i = Utilitaires.randomInt(4);
             String s = randomMouvToString.get(i);
             handleMouvableElementMouvement(data, s, enemy);
         }
+    }
+
+    public boolean isEnemy5casesAwayFromPlayer(Data data, Element enemy){
+        data.getPlayer().getX();
+        return false;
     }
 
     public void handleMouvableElementMouvement(Data data, String mouvPlayer, Element mouvableElement) {
