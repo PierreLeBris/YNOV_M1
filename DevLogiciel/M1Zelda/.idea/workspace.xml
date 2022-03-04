@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5e10b23-bcff-4f6f-9098-df3c42009d69" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../M1ZeldaProf/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../M1ZeldaProf/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../M1ZeldaJavaFX/src/model/Personnage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M1Zelda/main/Game.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../M1ZeldaJavaFX/out/production/M1ZeldaJavaFX/sample/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/../M1ZeldaJavaFX/out/production/M1ZeldaJavaFX/sample/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../M1ZeldaJavaFX/out/production/M1ZeldaJavaFX/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../M1ZeldaJavaFX/out/production/M1ZeldaJavaFX/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../M1ZeldaJavaFX/src/sample/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../M1ZeldaJavaFX/src/sample/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../M1ZeldaJavaFX/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../M1ZeldaJavaFX/src/sample/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +78,7 @@
       <updated>1645779305931</updated>
       <workItem from="1645779315205" duration="15932000" />
       <workItem from="1646296095062" duration="1549000" />
-      <workItem from="1646298883026" duration="478000" />
+      <workItem from="1646298883026" duration="1965000" />
     </task>
     <servers />
   </component>

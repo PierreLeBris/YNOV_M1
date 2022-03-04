@@ -29,33 +29,32 @@ public class Main extends Application {
         //Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Game game = new Game();
 
-
+        Group group = new Group();
         Utilitaires.fill2DArrayChar(game.data.getMap());
         Utilitaires.createAndPlaceEnemyOnMap(game.data);
         Utilitaires.createPerso(game.data);
         Utilitaires.fillMapWithElement(game.data);
         Utilitaires.createAndPlaceItemOnMap(game.data);
 
-
-
         Personnage p = game.data.getPlayer();
         Circle cp1 = new Circle(p.getX()*Data.RATIODISPLAY, p.getY()*Data.RATIODISPLAY, 20);
         cp1.setFill(Color.BLUE);
-        DataView.groupGame.getChildren().add(cp1);
+        group.getChildren().add(cp1);
 
         HashMap<Enemy, Circle> hmEnemies = new HashMap<Enemy, Circle>();
         for (Enemy e :game.data.getEnemies()) {
             Circle c = new Circle(e.getX()*Data.RATIODISPLAY, e.getY()*Data.RATIODISPLAY, 20);
             c.setFill(Color.RED);
-            DataView.groupGame.getChildren().add(c);
+            group.getChildren().add(c);
             hmEnemies.put(e, c);
         }
 
+        HashMap<Item, Circle> hmItems = new HashMap<Item, Circle>();
         for (Item i :game.data.getItems()) {
             Circle c = new Circle(i.getX()*Data.RATIODISPLAY, i.getY()*Data.RATIODISPLAY, 20);
             c.setFill(Color.YELLOW);
-            DataView.groupGame.getChildren().add(c);
-            DataView.hmItems.put(i, c);
+            group.getChildren().add(c);
+            hmItems.put(i, c);
         }
 
 
@@ -132,16 +131,16 @@ public class Main extends Application {
         r2.setFill(Color.GREEN);
         r3.setFill(Color.GREEN);
         r4.setFill(Color.GREEN);
-        DataView.groupGame.getChildren().add(r1);
-        DataView.groupGame.getChildren().add(r2);
-        DataView.groupGame.getChildren().add(r3);
-        DataView.groupGame.getChildren().add(r4);
+        group.getChildren().add(r1);
+        group.getChildren().add(r2);
+        group.getChildren().add(r3);
+        group.getChildren().add(r4);
 
         // r1.setFill(Color.PURPLE);
 
        // group.getChildren().add(r1);
 
-        Scene sceneGame = new Scene(DataView.groupGame, Data.GAMESCENEWIDHT, Data.GAMESCENEHEIGHT, Color.BLACK);
+        Scene sceneGame = new Scene(group, Data.GAMESCENEWIDHT, Data.GAMESCENEHEIGHT, Color.BLACK);
 
         sceneGame.setOnKeyPressed((KeyEvent event) -> {
            if (Data.gameStarted) {

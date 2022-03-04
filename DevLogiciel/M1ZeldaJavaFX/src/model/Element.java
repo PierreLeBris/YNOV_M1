@@ -1,13 +1,10 @@
 package model;
 
-import java.util.ArrayList;
-
 public abstract class Element {
 
 	private int x, y;
 	private String name;
 	private char charForMap;
-	private ArrayList<Item> inventory;
 
 	public Element() {
 		
@@ -17,7 +14,6 @@ public abstract class Element {
 		this.y = y;
 		this.setName(name);
 		this.setCharForMap(charForMap);
-		inventory = new ArrayList<Item>();
 	}
 
 	public int getX() {
@@ -52,13 +48,6 @@ public abstract class Element {
 		this.charForMap = charForMap;
 	}
 	
-	public ArrayList<Item> getInventory() {
-		return inventory;
-	}
-
-	public void setInventory(ArrayList<Item> inventory) {
-		this.inventory = inventory;
-	}
 
 	
 }

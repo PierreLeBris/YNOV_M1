@@ -41,7 +41,25 @@ public class Game {
 
     private void handleEnemyMouvement(Data data) {
         for (Element enemy : data.getEnemies()) {
+            if(isEnemy5casesAwayFromPlayer(data, enemy)){
+                if(Math.abs(data.getPlayer().getX() - enemy.getX())
+                < Math.abs(data.getPlayer().getY() - enemy.getY())) {
 
+                    if (data.getPlayer().getY() - enemy.getY() > 0) {
+                        mouv = "s";
+                    }
+                    else{
+                        mouv = "z";
+                    }
+                    if (data.getPlayer().getX() - enemy.getX() > 0) {
+                        mouv = "d";
+                    }
+                    else{
+                        mouv = "q";
+                    }
+                }
+                handleMouvableElementMouvement(data, s, enemy);
+            }
             int i = Utilitaires.randomInt(4);
             String s = randomMouvToString.get(i);
             handleMouvableElementMouvement(data, s, enemy);
@@ -49,8 +67,10 @@ public class Game {
     }
 
     public boolean isEnemy5casesAwayFromPlayer(Data data, Element enemy){
-        data.getPlayer().getX();
-        return false;
+
+        int diff = Math.abs(data.getPlayer().getX() - enemy.getX())
+                + Math.abs(data.getPlayer().getY() - enemy.getY());
+        return diff <= 5;
     }
 
     public void handleMouvableElementMouvement(Data data, String mouvPlayer, Element mouvableElement) {

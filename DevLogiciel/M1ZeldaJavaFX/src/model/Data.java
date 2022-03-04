@@ -1,23 +1,30 @@
 package model;
 
+import javafx.scene.shape.Circle;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Data {
 
+	public final static int RATIODISPLAY = 40;
+	public final static int GAMESCENEWIDHT = 800;
+	public final static int GAMESCENEHEIGHT = 800;
+
 	final static int MAPLENGHT = 20;
-	final static int MAPWIDTH = 15;
+	final static int MAPWIDTH = 20;
 	public final static int NBENEMIS = 10;
 	public final static int NBITEMS = 5;
+	static public boolean gameStarted = false;
 
 
-
-	char[][] map;
-	Element player = new Player(5,5,"Link", 'L');
+	Element[][] map;
+	Personnage player = new Player(5,5,"Link", 'L', 10, 10);
 	List<Enemy> enemies = new ArrayList<Enemy>();
-	List<Item> items = new ArrayList<Item>();
+	 List<Item> items = new ArrayList<Item>();
 
-	
+
 
 	public List<Item> getItems() {
 		return items;
@@ -27,23 +34,23 @@ public class Data {
 		this.items = items;
 	}
 
-	public Element getPlayer() {
+	public Personnage getPlayer() {
 		return player;
 	}
 
-	public void setPlayer(Element player) {
+	public void setPlayer(Personnage player) {
 		this.player = player;
 	}
 
 	public Data() {
-		map = new char[MAPLENGHT][MAPWIDTH];
+		map = new Element[MAPLENGHT][MAPWIDTH];
 	}
 
-	public char[][] getMap() {
+	public Element[][] getMap() {
 		return map;
 	}
 
-	public void setMap(char[][] map) {
+	public void setMap(Element[][] map) {
 		this.map = map;
 	}
 	
