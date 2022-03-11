@@ -44,7 +44,7 @@ public class View {
     }
 
     public static void printTransactionFromConnectedUser(){
-        for (Account a: Data.getConnectedUser().getUserAccounts()) {
+        for (Account a: Data.getConnectedUser().getUserAccounts().values()) {
             for (Transaction t : a.getListTransactions()) {
                 t.toString();
             }
