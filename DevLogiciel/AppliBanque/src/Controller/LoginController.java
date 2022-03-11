@@ -6,10 +6,15 @@ import Model.User;
 
 public class LoginController {
 
-    public static void login(String userName, String password){
-        User userTemp = UserDao.getUserByLastName(userName);
+    public static void login(String userId, String password){
+        User userTemp = UserDao.getUserById(Integer.parseInt(userId));
         if(userTemp!=null && userTemp.getPassword().equals(password)){
             Data.setConnectedUser(userTemp);
        }
+    }
+
+    public static User checkLogin(String userName, String password) {
+
+        return null;
     }
 }
