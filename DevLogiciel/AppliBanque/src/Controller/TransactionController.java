@@ -10,36 +10,42 @@ import View.TransactionView;
 
 public class TransactionController {
     TransactionView transactionView = new TransactionView();
+    UserDao userDao = new UserDao();
+    TransactionDao transactionDao = new TransactionDao();
 
     public void createAndSaveTransaction(Account afrom, Account ato, double howMuch){
         Transaction t = new Transaction("Tranfert", howMuch, afrom, ato);
         afrom.setBalance(afrom.getBalance()-howMuch);
         ato.setBalance(ato.getBalance()+howMuch);
 
-        TransactionDao.saveTransation(t);
+        transactionDao.saveTransation(t);
     }
 
     public void createTransactionFromConnectedUser() {
 
-        transactionView.chooseUser(UserDao.getUsers());
-       // User chosenUser = UserDao.getUserByLastName(transactionView.userTO);
-        User chosenUser = UserDao.getUserById(transactionView.userTO);
+        transactionView.chooseUser(userDao.getUsers());
+        try {
+            User chosenUser = userDao.getUserById(Integer.parseInt(transactionView.userTO));
+            transactionView.chooseAccountToUser(chosenUser);
+            Account accountTo = chosenUser.getUserAccounts().get(Integer.parseInt(transactionView.accountFrom));
 
-        transactionView.chooseAccountToUser(chosenUser);
-        Account accountTo = chosenUser.getUserAccounts().get(Integer.parseInt(transactionView.accountFrom));
+            transactionView.chooseAccountFromUser(Data.getConnectedUser());
+            Account accountFrom = userDao.getConnectedUser().getUserAccounts().get(Integer.parseInt(transactionView.accountTO));
 
-        transactionView.chooseAccountFromUser(Data.getConnectedUser());
-        Account accountFrom = UserDao.getConnectedUser().getUserAccounts().get(Integer.parseInt(transactionView.accountTO));
+            transactionView.giveAmount();
 
-        transactionView.giveAmount();
+            createAndSaveTransaction(accountFrom, accountTo,
+                    Double.parseDouble(transactionView.howmuch));
+        }
+        catch (NumberFormatException n){
 
-        createAndSaveTransaction(accountFrom, accountTo,
-                Double.parseDouble(transactionView.howmuch));
+        }
+
 
     }
 
-    public static void printTransactionFromConnectedUser(){
-        for (Account a: UserDao.getConnectedUser().getUserAccounts().values()) {
+    public void printTransactionFromConnectedUser(){
+        for (Account a: userDao.getConnectedUser().getUserAccounts().values()) {
             for (Transaction t : a.getListTransactions()) {
                 System.out.println(t.toString());
             }
