@@ -27,14 +27,6 @@ public class Account {
         this.listTransactions = listTransactions;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
@@ -65,15 +57,5 @@ public class Account {
 
     public void setListTransactions(List<Transaction> listTransactions) {
         this.listTransactions = listTransactions;
-    }
-
-    @Override
-    public String toString() {
-        return "Account{" +
-                "name='" + name + '\'' +
-                ", id=" + id +
-                ", balance=" + balance +
-                ", active=" + active +
-                '}';
     }
 }

@@ -35,7 +35,7 @@ public class View {
             System.out.println("1 Add an account to your profil");
             System.out.println("2 Create a transaction");
             System.out.println("3 View all transactions from your account");
-            System.out.println("4 Add a contact to your preferredContactList");
+            System.out.println("4 Add a contact to your preferedContactList");
             System.out.println("5 Exit");
             String choice = sc.nextLine();
             MenuController.handleMainMenu(choice);
