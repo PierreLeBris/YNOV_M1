@@ -17,9 +17,9 @@ public class UserDao {
         return Data.getUsersMap().get(lastName);
     }*/
 
-    public User getUserById(Integer userTO) {
+    public User getUserById(Integer userID) {
 
-        return Data.getUsersMap().get(userTO);
+        return Data.getUsersMap().get(userID);
     }
 
     public User getConnectedUser(){

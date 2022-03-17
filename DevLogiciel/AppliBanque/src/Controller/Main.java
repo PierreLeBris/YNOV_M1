@@ -6,6 +6,7 @@ import config.DBConfig;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class Main {
 
@@ -16,10 +17,10 @@ public class Main {
         String result;
         try {
             con = dbConfig.getConnection();
-            PreparedStatement ps = con.prepareStatement("SELECT * FROM [dbo].[user]");
+            PreparedStatement ps = con.prepareStatement("SELECT TOP (1000) * FROM [dbo].[user]");
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
-                result = rs.getString(1);
+                result = rs.getString(2);
                 System.out.println(result);
             }
             dbConfig.closeResultSet(rs);
@@ -30,8 +31,7 @@ public class Main {
         }finally {
             dbConfig.closeConnection(con);
         }
-
-        AddDataTest.addDataForTest();
+        //AddDataTest.addDataForTest();
 
         MainMenuController mainMenuController = new MainMenuController();
         mainMenuController.mainMenu();
