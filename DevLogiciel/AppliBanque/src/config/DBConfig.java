@@ -8,10 +8,21 @@ public class DBConfig {
 
     public Connection getConnection() throws ClassNotFoundException, SQLException {
         //Class.forName("com.mysql.cj.jdbc.Driver");
-        DriverManager.getDriver("D:\\Cours\\Ynov\\mysql-connector-java-8.0.28");
-        return DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/prod","root","rootroot");
+
+        String connectionUrl = "Server=tcp:archidbserver.database.windows.net,1433;"
+                + "Initial Catalog=AppliBank;"
+                + "Persist Security Info=False"
+                + "User ID=pierre;"
+                + "Password={Dx.Hawk77};"
+                + "MultipleActiveResultSets=False;"
+                + "Encrypt=True;"
+                + "TrustServerCertificate=False;"
+                +   "Connection Timeout=30;";
+
+        //DriverManager.getDriver("D:\\Cours\\Ynov\\mysql-connector-java-8.0.28");
+        return DriverManager.getConnection(connectionUrl);
     }
+
 
     public void closeConnection(Connection con){
         if(con!=null){

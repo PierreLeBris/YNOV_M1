@@ -8,6 +8,10 @@ public class LoginController {
 
     UserDao userDao = new UserDao();
 
+    public static User checkLogin(String userName, String password) {
+        return null;
+    }
+
     public void login(String userId, String password){
 
         User userTemp = userDao.getUserById(Integer.parseInt(userId));

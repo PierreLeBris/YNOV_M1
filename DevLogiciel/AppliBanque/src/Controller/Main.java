@@ -11,13 +11,12 @@ public class Main {
 
 
     public static void main(String [] args){
-      /*  DBConfig dbConfig = new DBConfig();
-
+        DBConfig dbConfig = new DBConfig();
         Connection con = null;
         String result;
         try {
             con = dbConfig.getConnection();
-            PreparedStatement ps = con.prepareStatement("Select * from User;");
+            PreparedStatement ps = con.prepareStatement("SELECT * FROM [dbo].[user]");
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
                 result = rs.getString(1);
@@ -26,12 +25,11 @@ public class Main {
             dbConfig.closeResultSet(rs);
             dbConfig.closePreparedStatement(ps);
         }catch (Exception ex){
+            System.out.println("Error");
 
         }finally {
             dbConfig.closeConnection(con);
         }
-*/
-
 
         AddDataTest.addDataForTest();
 
