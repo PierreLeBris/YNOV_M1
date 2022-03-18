@@ -17,7 +17,7 @@ public class Main {
         String result;
         try {
             con = dbConfig.getConnection();
-            PreparedStatement ps = con.prepareStatement("SELECT TOP (1000) * FROM [dbo].[user]");
+            PreparedStatement ps = con.prepareStatement("SELECT * FROM [dbo].[user]");
             ResultSet rs = ps.executeQuery();
             if(rs.next()){
                 result = rs.getString(2);
